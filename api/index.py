@@ -1,16 +1,8 @@
-from fastapi import FastAPI
-from fastapi.responses import JSONResponse
-from mangum import Mangum
+import json
 
-app = FastAPI(title="n8n-trends-api")
-
-@app.get("/")
-def root():
-    return {"ok": True, "service": "n8n-trends-api"}
-
-@app.get("/get_trends")
-def get_trends():
-    return JSONResponse({"ok": True, "data": []})
-
-# Mangum handler for Vercel
-handler = Mangum(app)
+def handler(request, context):
+    return {
+        "statusCode": 200,
+        "headers": {"content-type": "application/json"},
+        "body": json.dumps({"ok": True, "service": "n8n-trends-api"})
+    }
