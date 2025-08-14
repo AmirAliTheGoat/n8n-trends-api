@@ -1,5 +1,6 @@
-fastapi
-uvicorn
+fastapi==0.115.0
+uvicorn==0.30.6
 pydantic
 requests
 pytrends
+mangum==0.17.0
