@@ -10,7 +10,7 @@ from typing import List
 app = FastAPI()
 
 # Define the API endpoint
-@app.get("/api/get_trends")
+@app.get("/get_trends")
 def get_trends_data(keywords: List[str] = Query(None)):
     if not keywords:
         return {"error": "Please provide at least one keyword."}
