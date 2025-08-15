@@ -1,0 +1,25 @@
+{
+  "name": "n8n-trends-api",
+  "version": "1.0.0",
+  "description": "Google Trends API using Node.js and google-trends-api",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "node api/index.js"
+  },
+  "dependencies": {
+    "google-trends-api": "^4.9.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "AmirAliTheGoat",
+  "license": "MIT",
+  "keywords": [
+    "google-trends",
+    "api",
+    "nodejs",
+    "n8n",
+    "vercel"
+  ]
+}
